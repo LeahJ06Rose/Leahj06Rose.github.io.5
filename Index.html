@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+    <!--The language is English-->
+    <meta lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <head>
+        <title>Leah's Portfolio</title>
+        <link rel="stylesheet" href="Style.css">
+
+        <style>
+            ul li a
+            {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                transition: width 2s;
+            }
+
+            a:hover
+            {
+                background-color: #127575;
+                width: 90px;
+                transform: scale(1.02);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 style="color: blueviolet;">Leah's Portfolio</h1>
+            <p>Welcome to my portfolio</p>
+        </header>
+        <!--The nav portion of the code doesn't go any where-->
+        <nav>
+            <ul style="list-style-type: none;">
+                <li><a href="#About Me">About Me</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <header><b>About Me</b></header>
+                <p>
+                    Hi, my name is Leah Jones. And this is my portfolio. I'm 19 years old.
+                </p>
+            </section>
+            <section>
+                <header><b>Projects</b></header>
+                <p>I'm currently not on any projects right now.</p>
+                <table>
+                    <caption>Projects</caption>
+                    <colgroup>
+                        <col span="3" style="background-color: aliceblue;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Projects</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Butterfly</td>
+                            <td>2/3/2023</td>
+                            <td>A blue butterfly on top of a flower.</td>
+                        </tr>
+                        <tr>
+                            <td>Apple</td>
+                            <td>2/4/2023</td>
+                            <td>3 and a half apples.</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+                <img src="Butterfly.jpg" alt="Butterfly"
+                width="150" height="150">
+                <img src="Apples.jpg" alt="Apple" width="150"
+                height="150">
+                <table>
+                    <caption>Tacos</caption>
+                    <colgroup>
+                        <col span="3" style="background-color: goldenrod;"></col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Toppings</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cheese</td>
+                            <td>$0.50</td>
+                            <td>Cheese is a topping.</td>
+                        </tr>
+                        <tr>
+                            <td>Tomato</td>
+                            <td>$0.90</td>
+                            <td>Some people don't eat tomatoes.</td>
+                        </tr>
+                        <tr>
+                            <td>Onions</td>
+                            <td>$1.00</td>
+                            <td>Makes your breath stink.</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+                <img src="Taco.png" alt="Tacos" width="150"
+                height="150">
+            </section>
+            <section>
+                <header><b>Contact</b></header>
+                <p>This is my contact information:<br></p>
+                <form>
+                    <style>
+                        .flex
+                        {
+                            display: flex;
+                        }
+                    </style>
+                    <label for="sname">Sender name:</label>
+                    <input type="text" id="sname" name="sname">
+                    <br>
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email"><br>
+                    <label for="sub">Subject:</label>
+                    <input type="text" id="sub" name="sub"><br/>
+                    <textarea rows="5"></textarea><br/>
+                    <input type="submit" value="Submit">
+                    <style>
+                        sub
+                        {
+                            transition: rgb(255, 201, 3) 0.3s ease;
+                        }
+                    </style>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Leah Jones &copy; 2026<br></p>
+        </footer>
+    </body>
+</html>
